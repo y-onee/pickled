@@ -1,6 +1,6 @@
 import random
 
-def generate_sessions(num_sessions, seq, used_pairs, available):
+def generate_sessions(seq, used_pairs, available):
     random.shuffle(available)
 
     pairs = []
@@ -48,7 +48,7 @@ def bye_tracking(seq, num_sessions):
 
         print("Byes:", [seq[x] for x in range(n) if x not in curr_seq])
 
-        generate_sessions(num_sessions, seq, used_pairs, curr_seq)
+        generate_sessions(seq, used_pairs, curr_seq)
 
 
 if __name__ == '__main__':
