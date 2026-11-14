@@ -1,0 +1,29 @@
+.material-box {
+  box-sizing: border-box;
+  width: min(100% - 2rem, 28rem);
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  text-align: left;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.material-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgb(0 0 0 / 16%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .material-box {
+    transition: none;
+  }
+
+  .material-box:hover {
+    transform: none;
+  }
+}

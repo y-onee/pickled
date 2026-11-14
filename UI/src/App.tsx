@@ -1,15 +1,12 @@
-import './App.css'
+import './App.css';
+import { InputContainer } from './containers/InputContainer';
 
 function App() {
   return (
     <>
-      <section>
-        <div>
-          Hello
-        </div>
-      </section>
+      <InputContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
