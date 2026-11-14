@@ -12,7 +12,7 @@ export const InputFields = ({
   onChange,
 }: InputFieldsProps) => {
   return (
-    <label>
+    <label style={{padding: '2px'}}>
       {textName}
       <input
         type="text"

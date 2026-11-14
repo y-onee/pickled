@@ -7,7 +7,7 @@ export const InputContainer = () => {
   const [sessions, setSessions] = useState('');
 
   return (
-    <Box style={{ display: 'flex', flexDirection: 'column' }}>
+    <Box style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       <InputFields
         textName="Players: "
         fieldName="players"
